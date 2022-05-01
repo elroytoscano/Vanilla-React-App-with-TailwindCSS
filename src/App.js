@@ -1,11 +1,14 @@
 import './styles/tailwind.css';
 
-import Button from './Button';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className='m-4'>
-      <Button />
+      <Button
+        text='Simple Button'
+        onClick={() => console.log('Simple button click')}
+      />
     </div>
   );
 }
